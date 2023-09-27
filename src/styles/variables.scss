@@ -1,0 +1,32 @@
+@mixin flex-row() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-col() {
+  @include flex-row;
+  flex-direction: column;
+}
+
+// Font
+$font-fam: "Montserrat", sans-serif;
+
+// Colors
+$bg-color: #19161b;
+$text-color: #fff;
+$text-color-sm: #b8b8b8;
+$section-color: #1f1d21;
+$btn-color: #ffb577;
+$link-color: #c4e4ea;
+$hover-color: #176396;
+
+// Sizes
+$title-size: 4rem;
+$title-size-sm: 2rem;
+$section-title: 3rem;
+$subtitle-size: 1.25rem;
+$text-size: 1rem;
+
+// More
+$border-radius: 2px;

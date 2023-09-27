@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.header {
+  .container {
+    @include flex-row;
+    justify-content: start;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    .contact-btn {
+      margin-left: auto;
+    }
+    .logo > a {
+      @include flex-row;
+    }
+  }
+  .nav-items {
+    @include flex-row;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+}
