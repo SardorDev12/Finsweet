@@ -1,0 +1,109 @@
+@import "../styles/variables.scss";
+.home.page {
+  padding: 5rem 7rem 0;
+}
+
+.hero {
+  @include flex-row;
+  padding: $section-padding;
+  .hero-info {
+    @include flex-col;
+    align-items: flex-start;
+    gap: 0.7rem;
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      padding: 0 2rem 0 0;
+    }
+    .view-menu {
+      margin: 1rem 0;
+    }
+    p {
+      color: $text-color-sm;
+    }
+
+    h4 {
+      font-weight: 500;
+    }
+  }
+  .hero-image {
+    width: 500px;
+  }
+}
+
+.about-us {
+  padding: 10rem $section-padding;
+  margin-bottom: 10rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  .about-us-info {
+    .about-subtitle {
+      font-size: $text-color-sm;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      @include flex-row;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      color: $btn-color;
+      .about-subtitle__icon {
+        border-bottom: 1px solid transparent;
+      }
+      &:hover .about-subtitle__icon {
+        border-bottom: 1px solid $btn-color;
+      }
+    }
+
+    .about-title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 2.5rem;
+      margin: 2rem 0;
+    }
+
+    p {
+      color: $text-color-sm;
+      font-size: 0.9rem;
+    }
+    .about-text {
+      margin-bottom: 2rem;
+    }
+    .about-btn {
+      margin-top: 2rem;
+    }
+    .stats {
+      @include flex-row;
+      gap: 1rem;
+      color: #c4e4ea;
+      .stat-heading {
+        margin-bottom: 1rem;
+        h3 {
+          font-weight: 500;
+          @include flex-row;
+          justify-content: flex-start;
+          gap: 0.5rem;
+
+          .stat-icon {
+            color: $btn-color;
+          }
+        }
+      }
+    }
+  }
+
+  .about-images {
+    @include flex-row;
+    justify-content: end;
+    gap: 3rem;
+
+    .about-image {
+      width: 210px;
+
+      &:first-child {
+        transform: translateY(3rem);
+      }
+    }
+  }
+}

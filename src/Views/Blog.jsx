@@ -1,4 +1,4 @@
 function Blog() {
-  return <div>Blog</div>;
+  return <div className="page">Blog</div>;
 }
 export default Blog;

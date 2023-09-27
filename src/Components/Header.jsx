@@ -1,16 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/icons/Logo.svg";
 import "../styles/header.scss";
-import { FaArrowRight } from "react-icons/fa";
+import Button from "./Button";
 
 function Header({ hideBtn, location }) {
   return (
     <header className={`header ${location}`} id="header">
       <div className="container">
         <div className="logo">
-          <a href="">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
         <nav className="nav">
           <ul className="nav-items">
@@ -22,13 +22,8 @@ function Header({ hideBtn, location }) {
             <NavLink to="/contact">Contact</NavLink>
           </ul>
         </nav>
-        <button
-          type="button"
-          className={`${hideBtn ? "hidden" : ""}  contact-btn`}
-        >
-          Contact Us
-          <FaArrowRight />
-        </button>
+
+        <Button title={"Contact Us"} clas={"contact-btn"} hideBtn={hideBtn} />
       </div>
     </header>
   );
