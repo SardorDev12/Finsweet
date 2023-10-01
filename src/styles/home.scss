@@ -1,34 +1,74 @@
 @import "../styles/variables.scss";
 .home.page {
-  padding: 5rem 7rem 0;
+  padding: 5rem 2rem 0;
 }
 
 .hero {
   @include flex-row;
-  padding: $section-padding;
+  padding: 3rem $section-padding 3rem;
+
+  @include mobile-l {
+    flex-direction: column;
+    padding: 0;
+  }
   .hero-info {
     @include flex-col;
     align-items: flex-start;
     gap: 0.7rem;
+    @include tablet {
+      gap: 0;
+    }
 
     .section-title {
       font-size: 2.5rem;
       font-weight: 500;
       padding: 0 2rem 0 0;
+
+      @include tablet {
+        font-size: 2rem;
+        margin: 0;
+      }
     }
     .view-menu {
       margin: 1rem 0;
     }
     p {
       color: $text-color-sm;
+      @include tablet {
+        font-size: 1rem;
+      }
+
+      @include mobile-l {
+        font-size: $subtitle-size;
+      }
     }
 
     h4 {
       font-weight: 500;
+
+      @include mobile-l {
+        font-size: $title-size-sm;
+      }
+    }
+    a {
+      @include tablet {
+        font-size: 1rem;
+      }
+      @include mobile-l {
+        font-size: $subtitle-size;
+      }
     }
   }
   .hero-image {
-    width: 500px;
+    width: 800px;
+
+    @include tablet {
+      width: 300px;
+    }
+    @include mobile-l {
+      width: 100%;
+      margin: 1rem 0;
+    }
   }
 }
 
@@ -39,28 +79,23 @@
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
 
-  .about-us-info {
-    .about-subtitle {
-      font-size: $text-color-sm;
-      font-weight: 300;
-      margin-bottom: 1.5rem;
-      @include flex-row;
-      justify-content: flex-start;
-      gap: 0.5rem;
-      color: $btn-color;
-      .about-subtitle__icon {
-        border-bottom: 1px solid transparent;
-      }
-      &:hover .about-subtitle__icon {
-        border-bottom: 1px solid $btn-color;
-      }
-    }
+  @include mobile-l {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0;
+    margin: 0 0 5rem;
+  }
 
+  .about-us-info {
     .about-title {
       font-size: 2.5rem;
       font-weight: 500;
       line-height: 2.5rem;
       margin: 2rem 0;
+
+      @include tablet {
+        margin: 0 0 1rem;
+      }
     }
 
     p {
@@ -77,6 +112,9 @@
       @include flex-row;
       gap: 1rem;
       color: #c4e4ea;
+      @include tablet {
+        gap: 0;
+      }
       .stat-heading {
         margin-bottom: 1rem;
         h3 {
@@ -84,7 +122,9 @@
           @include flex-row;
           justify-content: flex-start;
           gap: 0.5rem;
-
+          @include tablet {
+            font-size: 1.3rem;
+          }
           .stat-icon {
             color: $btn-color;
           }
@@ -98,11 +138,218 @@
     justify-content: end;
     gap: 3rem;
 
+    @include tablet {
+      gap: 1rem;
+    }
+
     .about-image {
       width: 210px;
 
+      @include tablet {
+        width: 160px;
+      }
+
       &:first-child {
         transform: translateY(3rem);
+      }
+    }
+  }
+}
+
+.services {
+  .section-title {
+    @include mobile-l {
+      @include flex-col;
+      align-items: flex-start;
+    }
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem 4rem;
+    background: rgba(0, 0, 0, 0.16);
+    padding: 3rem;
+
+    @include mobile-l {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .service {
+      .service-icon {
+        padding: 0.8rem 0.8rem 0.4rem;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgba(255, 181, 119, 0.07);
+        margin-bottom: 1rem;
+        svg {
+          font-size: 1.3rem;
+        }
+      }
+      p {
+        color: $text-color-sm;
+        font-size: $text-size-sm;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.menu {
+  margin-top: 2rem;
+
+  .menu-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @include mobile-l {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-item {
+      padding-bottom: 2.3rem;
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: rgba(31, 29, 33, 1);
+
+      @include mobile-l {
+        padding-bottom: 4.7rem;
+      }
+    }
+    .item-info {
+      padding: 0 0.5rem;
+      @include flex-row;
+
+      @include mobile-l {
+        font-size: 1.2rem;
+        flex-direction: column;
+      }
+    }
+  }
+  .view-menu-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: block;
+  }
+}
+
+.testimonials {
+  @include flex-row;
+  width: 100%;
+  gap: 3rem;
+  padding: 5rem 2rem;
+  margin: 2rem 0;
+  background-color: $section-color;
+
+  @include mobile-l {
+    padding: 3rem 0 5rem;
+    justify-content: center;
+  }
+
+  .testimonials-slider {
+    max-width: 40%;
+
+    @include tablet {
+      max-width: 50%;
+    }
+
+    @include mobile-l {
+      padding: 0 1.5rem;
+      max-width: 100%;
+    }
+
+    .slider {
+      .slick-dots {
+        @include tablet {
+          bottom: -3rem;
+        }
+      }
+    }
+    .testimonial {
+      padding: 0 0 0 1rem;
+      @include flex-col;
+      gap: 2rem;
+      svg {
+        font-size: 2rem;
+      }
+      .testimonial-text {
+        font-size: 1rem;
+        margin: 2rem 0;
+      }
+      .author {
+        @include flex-row;
+      }
+    }
+  }
+
+  .testimonial-video {
+    flex: 1;
+    max-width: 60%;
+
+    @include mobile-l {
+      display: none;
+    }
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    border-radius: 10px;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.blog-section {
+  h1 {
+    font-size: 2.5rem;
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    @include tablet {
+      gap: 1rem;
+    }
+
+    @include mobile-l {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+      background-color: $section-color;
+      border-radius: $border-radius;
+      @include flex-col;
+      align-items: flex-start;
+      gap: 1rem;
+      .blog-info {
+        padding: 1rem;
+        padding-bottom: 0;
+
+        .blog-date {
+          font-size: $text-size-sm;
+          opacity: 0.5;
+        }
+        h4 {
+          font-size: $title-size-sm;
+        }
+        .blog-text {
+          color: $text-color-sm;
+        }
+        .readmore {
+          opacity: "0.5";
+          margin-left: 0.5rem;
+        }
       }
     }
   }

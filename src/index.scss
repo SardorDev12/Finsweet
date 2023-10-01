@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 12px;
+  }
+}
 ::-webkit-scrollbar {
   width: 3px;
   background-color: $section-color;
@@ -42,6 +50,14 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
+  @include tablet {
+    padding: 20px 0;
+  }
+
+  @include mobile-l {
+    padding-bottom: 0;
+  }
 }
 
 button {
@@ -73,8 +89,33 @@ button {
     text-decoration: none;
   }
 }
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%;
+
+.section-subtitle {
+  font-size: $text-color-sm;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  @include flex-row;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  color: $btn-color;
+  .section-subtitle__icon {
+    border-bottom: 1px solid transparent;
+  }
+  &:hover .section-subtitle__icon {
+    border-bottom: 1px solid $btn-color;
+  }
+}
+
+.section-title {
+  @include flex-row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    width: 80%;
+    font-size: $text-size-sm;
+    color: $text-color-sm;
   }
 }

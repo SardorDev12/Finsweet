@@ -27,6 +27,20 @@ $section-title: 3rem;
 $title-size-sm: 2rem;
 $subtitle-size: 1.25rem;
 $text-size: 1rem;
+$text-size-sm: 0.9rem;
+
+// Responsive
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
 
 // More
 $border-radius: 2px;

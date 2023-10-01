@@ -8,9 +8,9 @@ function AboutUsInfo({ img1, img2 }) {
   return (
     <section className="about-us">
       <div className="about-us-info">
-        <Link className="about-subtitle" to="aboutUs">
+        <Link className="section-subtitle" to="aboutUs">
           KNOW MORE ABOUT US
-          <FaArrowRight className="about-subtitle__icon" />
+          <FaArrowRight className="section-subtitle__icon" />
         </Link>
         <h2 className="about-title">
           We source sustainable & line caught Foods

@@ -1,0 +1,131 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "../src/assets/images/Image (1).png",
+      "title": "Drp Cofee",
+      "price": "$08.85",
+      "category": "cofee"
+    },
+    {
+      "id": 2,
+      "img": "../src/assets/images/Image (2).png",
+      "title": "Choco Cup Cake",
+      "price": "$4.85",
+      "category": "Quafe Cake"
+    },
+    {
+      "id": 3,
+      "img": "../src/assets/images/Image (3).png",
+      "title": "Chicken Burger",
+      "price": "$8.85",
+      "category": "Fast Food"
+    },
+    {
+      "id": 4,
+      "img": "../src/assets/images/Image (4).png",
+      "title": "French Fries",
+      "price": "$7.85",
+      "category": "Fast Food"
+    },
+    {
+      "id": 5,
+      "img": "../src/assets/images/Image (5).png",
+      "title": "Sandwitch",
+      "price": "$3.97",
+      "category": "Fast Food"
+    },
+    {
+      "id": 6,
+      "img": "../src/assets/images/Image (6).png",
+      "title": "Chinese Soup",
+      "price": "$8.85",
+      "category": "Fast Food"
+    },
+    {
+      "id": 7,
+      "img": "../src/assets/images/Image (7).png",
+      "title": "Quafe Brade",
+      "price": "$7.85",
+      "category": "Snacks"
+    },
+    {
+      "id": 8,
+      "img": "../src/assets/images/Image (8).png",
+      "title": "Dalgona Cofee",
+      "price": "$4.97",
+      "category": "cofee"
+    },
+    {
+      "id": 9,
+      "img": "../src/assets/images/Image (9).png",
+      "title": "Chowmin Noodle",
+      "price": "$8.85",
+      "category": "Fast Food"
+    },
+    {
+      "id": 10,
+      "img": "../src/assets/images/Image (10).png",
+      "title": "Coka Cola",
+      "price": "$7.85",
+      "category": "Cocktails"
+    },
+    {
+      "id": 11,
+      "img": "../src/assets/images/Image (11).png",
+      "title": "Fruit Salad",
+      "price": "$3.97",
+      "category": "Fast Food"
+    },
+    {
+      "id": 12,
+      "img": "../src/assets/images/Image (12).png",
+      "title": "Drp Cofee",
+      "price": "$08.85",
+      "category": "cofee"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "img": "../src/assets/images/Image (16).png",
+      "title": "A guide to Thai Curry",
+      "author": "Andrew Jonson",
+      "date": "27th January 2021",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quam totam ipsam blanditiis vitae velit ea. Suscipit adipisci dicta excepturi provident praesentium repudiandae unde, voluptatem enim voluptate recusandae cumque est iusto libero nobis aliquid quas ab vero consequuntur dignissimos impedit porro consequatur amet repellat? Tenetur molestias quasi inventore exercitationem. Quaerat commodi neque placeat consequuntur reiciendis at maxime? Vel, in voluptates sint cupiditate odit nulla alias magnam modi doloribus quae inventore quidem accusamus harum ipsam placeat dicta dolore fugiat nesciunt officiis error iusto ullam iste veniam! Minus rerum odit, enim dolore ipsam in eum exercitationem quidem neque numquam non maiores expedita repudiandae dolor cumque voluptatum vero nesciunt eaque deleniti. Nulla vitae, quisquam ipsam molestias debitis aperiam provident et. Voluptates molestias ipsa, molestiae ducimus commodi accusantium harum itaque, eligendi adipisci illo quis id quidem, impedit aperiam error porro nobis asperiores explicabo. Temporibus, facilis voluptatum laborum commodi ab non cupiditate quos, quam optio eligendi nisi doloremque adipisci nesciunt odit iure harum eum perferendis fugit ratione necessitatibus nihil architecto iste possimus quod. Cupiditate nulla consectetur similique odio sed, molestiae ipsum deleniti at placeat ex laborum alias laboriosam tempora sequi praesentium! Adipisci cum autem perspiciatis dolor, in explicabo delectus, nesciunt rem, aliquid hic eos assumenda."
+    },
+
+    {
+      "id": 2,
+      "img": "../src/assets/images/Image (16).png",
+      "title": "A guide to Thai Curry",
+      "author": "Andrew Jonson",
+      "date": "27th January 2021",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quam totam ipsam blanditiis vitae velit ea. Suscipit adipisci dicta excepturi provident praesentium repudiandae unde, voluptatem enim voluptate recusandae cumque est iusto libero nobis aliquid quas ab vero consequuntur dignissimos impedit porro consequatur amet repellat? Tenetur molestias quasi inventore exercitationem. Quaerat commodi neque placeat consequuntur reiciendis at maxime? Vel, in voluptates sint cupiditate odit nulla alias magnam modi doloribus quae inventore quidem accusamus harum ipsam placeat dicta dolore fugiat nesciunt officiis error iusto ullam iste veniam! Minus rerum odit, enim dolore ipsam in eum exercitationem quidem neque numquam non maiores expedita repudiandae dolor cumque voluptatum vero nesciunt eaque deleniti. Nulla vitae, quisquam ipsam molestias debitis aperiam provident et. Voluptates molestias ipsa, molestiae ducimus commodi accusantium harum itaque, eligendi adipisci illo quis id quidem, impedit aperiam error porro nobis asperiores explicabo. Temporibus, facilis voluptatum laborum commodi ab non cupiditate quos, quam optio eligendi nisi doloremque adipisci nesciunt odit iure harum eum perferendis fugit ratione necessitatibus nihil architecto iste possimus quod. Cupiditate nulla consectetur similique odio sed, molestiae ipsum deleniti at placeat ex laborum alias laboriosam tempora sequi praesentium! Adipisci cum autem perspiciatis dolor, in explicabo delectus, nesciunt rem, aliquid hic eos assumenda."
+    },
+    {
+      "id": 3,
+      "img": "../src/assets/images/Image (16).png",
+      "title": "A guide to Thai Curry",
+      "author": "Andrew Jonson",
+      "date": "27th January 2021",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quam totam ipsam blanditiis vitae velit ea. Suscipit adipisci dicta excepturi provident praesentium repudiandae unde, voluptatem enim voluptate recusandae cumque est iusto libero nobis aliquid quas ab vero consequuntur dignissimos impedit porro consequatur amet repellat? Tenetur molestias quasi inventore exercitationem. Quaerat commodi neque placeat consequuntur reiciendis at maxime? Vel, in voluptates sint cupiditate odit nulla alias magnam modi doloribus quae inventore quidem accusamus harum ipsam placeat dicta dolore fugiat nesciunt officiis error iusto ullam iste veniam! Minus rerum odit, enim dolore ipsam in eum exercitationem quidem neque numquam non maiores expedita repudiandae dolor cumque voluptatum vero nesciunt eaque deleniti. Nulla vitae, quisquam ipsam molestias debitis aperiam provident et. Voluptates molestias ipsa, molestiae ducimus commodi accusantium harum itaque, eligendi adipisci illo quis id quidem, impedit aperiam error porro nobis asperiores explicabo. Temporibus, facilis voluptatum laborum commodi ab non cupiditate quos, quam optio eligendi nisi doloremque adipisci nesciunt odit iure harum eum perferendis fugit ratione necessitatibus nihil architecto iste possimus quod. Cupiditate nulla consectetur similique odio sed, molestiae ipsum deleniti at placeat ex laborum alias laboriosam tempora sequi praesentium! Adipisci cum autem perspiciatis dolor, in explicabo delectus, nesciunt rem, aliquid hic eos assumenda."
+    },
+    {
+      "id": 4,
+      "img": "../src/assets/images/Image (16).png",
+      "title": "A guide to Thai Curry",
+      "author": "Andrew Jonson",
+      "date": "27th January 2021",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quam totam ipsam blanditiis vitae velit ea. Suscipit adipisci dicta excepturi provident praesentium repudiandae unde, voluptatem enim voluptate recusandae cumque est iusto libero nobis aliquid quas ab vero consequuntur dignissimos impedit porro consequatur amet repellat? Tenetur molestias quasi inventore exercitationem. Quaerat commodi neque placeat consequuntur reiciendis at maxime? Vel, in voluptates sint cupiditate odit nulla alias magnam modi doloribus quae inventore quidem accusamus harum ipsam placeat dicta dolore fugiat nesciunt officiis error iusto ullam iste veniam! Minus rerum odit, enim dolore ipsam in eum exercitationem quidem neque numquam non maiores expedita repudiandae dolor cumque voluptatum vero nesciunt eaque deleniti. Nulla vitae, quisquam ipsam molestias debitis aperiam provident et. Voluptates molestias ipsa, molestiae ducimus commodi accusantium harum itaque, eligendi adipisci illo quis id quidem, impedit aperiam error porro nobis asperiores explicabo. Temporibus, facilis voluptatum laborum commodi ab non cupiditate quos, quam optio eligendi nisi doloremque adipisci nesciunt odit iure harum eum perferendis fugit ratione necessitatibus nihil architecto iste possimus quod. Cupiditate nulla consectetur similique odio sed, molestiae ipsum deleniti at placeat ex laborum alias laboriosam tempora sequi praesentium! Adipisci cum autem perspiciatis dolor, in explicabo delectus, nesciunt rem, aliquid hic eos assumenda."
+    },
+    {
+      "id": 5,
+      "img": "../src/assets/images/Image (16).png",
+      "title": "A guide to Thai Curry",
+      "author": "Andrew Jonson",
+      "date": "27th January 2021",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quam totam ipsam blanditiis vitae velit ea. Suscipit adipisci dicta excepturi provident praesentium repudiandae unde, voluptatem enim voluptate recusandae cumque est iusto libero nobis aliquid quas ab vero consequuntur dignissimos impedit porro consequatur amet repellat? Tenetur molestias quasi inventore exercitationem. Quaerat commodi neque placeat consequuntur reiciendis at maxime? Vel, in voluptates sint cupiditate odit nulla alias magnam modi doloribus quae inventore quidem accusamus harum ipsam placeat dicta dolore fugiat nesciunt officiis error iusto ullam iste veniam! Minus rerum odit, enim dolore ipsam in eum exercitationem quidem neque numquam non maiores expedita repudiandae dolor cumque voluptatum vero nesciunt eaque deleniti. Nulla vitae, quisquam ipsam molestias debitis aperiam provident et. Voluptates molestias ipsa, molestiae ducimus commodi accusantium harum itaque, eligendi adipisci illo quis id quidem, impedit aperiam error porro nobis asperiores explicabo. Temporibus, facilis voluptatum laborum commodi ab non cupiditate quos, quam optio eligendi nisi doloremque adipisci nesciunt odit iure harum eum perferendis fugit ratione necessitatibus nihil architecto iste possimus quod. Cupiditate nulla consectetur similique odio sed, molestiae ipsum deleniti at placeat ex laborum alias laboriosam tempora sequi praesentium! Adipisci cum autem perspiciatis dolor, in explicabo delectus, nesciunt rem, aliquid hic eos assumenda."
+    }
+  ]
+}

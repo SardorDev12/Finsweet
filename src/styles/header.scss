@@ -13,20 +13,63 @@
     justify-content: start;
     gap: 2rem;
     padding: 1.5rem 4rem;
+    @include mobile-l {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .header-mobile {
+      .logo > a {
+        @include flex-row;
+      }
+      @include flex-row;
+      .toggle-menu {
+        display: none;
+        @include mobile-l {
+          display: block;
+          font-size: 2rem;
+        }
+      }
+      @include mobile-l {
+        width: 100%;
+        @include flex-row;
+      }
+    }
+
+    @include tablet {
+      gap: 1rem;
+      font-size: 1.2rem;
+      padding: 1.5rem 3rem;
+    }
     .contact-btn {
       margin-left: auto;
-    }
-    .logo > a {
-      @include flex-row;
+
+      @include mobile-l {
+        display: none;
+      }
     }
   }
   .nav-items {
     @include flex-row;
     justify-content: flex-start;
     gap: 2rem;
+    transition: all 0.3s ease-in-out;
+
+    @include mobile-l {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 0;
+      overflow: hidden;
+      &.show {
+        height: 250px;
+        opacity: 1;
+      }
+    }
     a {
       color: #ffffff;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
+  }
+
+  @include tablet {
   }
 }
