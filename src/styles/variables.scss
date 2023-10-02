@@ -42,6 +42,11 @@ $text-size-sm: 0.9rem;
   }
 }
 
+@mixin mobile-s {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
 // More
 $border-radius: 2px;
 $section-padding: 0 1.7rem;
