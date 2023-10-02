@@ -6,7 +6,7 @@ import Testimonials from "../Components/Testimonials";
 import img1 from "../assets/images/Know more Image 1.png";
 import img2 from "../assets/images/Know more Image 2.png";
 
-import { Link, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { FaBirthdayCake } from "react-icons/fa";
 import { FaCoffee } from "react-icons/fa";
@@ -14,10 +14,10 @@ import { FaHamburger } from "react-icons/fa";
 import { FaCocktail } from "react-icons/fa";
 import { FaFire } from "react-icons/fa";
 import { FaUtensils } from "react-icons/fa";
+import { useDataContext } from "../Layouts/GlobalContext";
 
 function Home() {
-  // const { newData1, newData2 } = useLoaderData();
-  const { products, news } = useLoaderData();
+  const { products, news } = useDataContext();
   return (
     <>
       <section className="home page">
@@ -150,7 +150,7 @@ function Home() {
             </div>
             <div className="section-subtitle-2">Most Popular Picks</div>
             <div className="menu-container">
-              {products.slice(0, 6).map((item, index) => {
+              {products?.slice(0, 6).map((item, index) => {
                 return (
                   <div className="menu-item" key={index}>
                     <img src={item.img} alt="menu item" />
@@ -176,7 +176,7 @@ function Home() {
           <section className="blog-section">
             <h1 className="section-title">Read Our Lastest Blog</h1>
             <div className="blogs">
-              {news.slice(0, 3).map((blog, index) => {
+              {news?.slice(0, 3).map((blog, index) => {
                 return (
                   <div className="blog" key={index}>
                     <div className="blog-info">
@@ -203,22 +203,3 @@ function Home() {
   );
 }
 export default Home;
-
-export const loadMenuDataHome = async () => {
-  // const res1 = await fetch("http://localhost:3001/products");
-  // const res2 = await fetch("http://localhost:3001/news");
-  // const data1 = await res1.json();
-  // const data2 = await res2.json();
-  // const newData1 = data1.slice(0, 6);
-  // const newData2 = data2.slice(0, 3);
-  // if (!res1.ok || !res2.ok) {
-  //   throw Error("Could not fetch data!");
-  // }
-  // return { newData1, newData2 };
-
-  const res = await fetch("data/db.json");
-  if (!res.ok) {
-    throw Error("Could not fetch data!");
-  }
-  return res.json();
-};

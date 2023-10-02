@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import GlobalLayout from "./Layouts/GlobalLayout";
-import Home, { loadMenuDataHome } from "./Views/Home";
+import Home from "./Views/Home";
 import Menu, { menuLoader } from "./Views/Menu";
 import AboutUs from "./Views/AboutUs";
 import OurStory from "./Views/OurStory";
@@ -14,16 +14,12 @@ import Contact from "./Views/Contact";
 import Error from "./Views/Error";
 import MenuLayout from "./Layouts/MenuLayout";
 import BlogLayout from "./Layouts/BlogLayout";
+import { DataProvider } from "./Layouts/GlobalContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<GlobalLayout />}>
-      <Route
-        index
-        loader={loadMenuDataHome}
-        errorElement={<Error />}
-        element={<Home />}
-      />
+      <Route index errorElement={<Error />} element={<Home />} />
       <Route path="menu" element={<MenuLayout />}>
         <Route
           index
@@ -49,9 +45,11 @@ const router = createBrowserRouter(
 );
 function App() {
   return (
-    <div>
-      <RouterProvider router={router}></RouterProvider>
-    </div>
+    <DataProvider>
+      <div>
+        <RouterProvider router={router}></RouterProvider>
+      </div>
+    </DataProvider>
   );
 }
 export default App;
