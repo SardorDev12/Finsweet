@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+.ourstory.page {
+  padding: $padding-desktop;
+  padding-bottom: 5rem;
+  padding-top: 7rem;
+  @include flex-row;
+  align-items: flex-start;
+  gap: 4rem;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include mobile-l {
+    padding: 1rem;
+    padding-top: 6rem;
+  }
+  p {
+    color: $text-color-sm;
+  }
+  .story-image {
+    .images {
+      @include flex-row;
+      padding: 2rem 0;
+      @include tablet {
+        justify-content: space-evenly;
+      }
+      @include mobile-s {
+        flex-direction: column;
+        gap: 5rem;
+      }
+      .image {
+        width: 220px;
+        height: 400px;
+        @include mobile-l {
+          width: 180px;
+        }
+        @include mobile-s {
+          width: 100%;
+          height: 200px;
+        }
+        &:first-child {
+          transform: translateY(2rem);
+        }
+      }
+    }
+  }
+  .story-text {
+    max-width: 50%;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    .story-text__title {
+      margin-bottom: 2rem;
+      span {
+        color: $btn-color;
+      }
+    }
+    p {
+      width: 80%;
+    }
+  }
+}
