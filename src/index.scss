@@ -119,3 +119,9 @@ button {
     color: $text-color-sm;
   }
 }
+
+.error.page {
+  @include mobile-l {
+    padding-top: 5rem;
+  }
+}
