@@ -216,7 +216,7 @@ export const loadMenuDataHome = async () => {
   // }
   // return { newData1, newData2 };
 
-  const res = await fetch("https://sardordev12.github.io/feenSweetAPI/db.json");
+  const res = await fetch("data/db.json");
   if (!res.ok) {
     throw Error("Could not fetch data!");
   }
