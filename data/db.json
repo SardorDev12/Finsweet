@@ -2,85 +2,85 @@
   "products": [
     {
       "id": 1,
-      "img": "../src/assets/images/Image(1).png",
+      "img": "https://wallpapers.com/images/hd/hot-espresso-surrounded-by-coffee-beans-h9hy7uzs9cxkjcxz.jpg",
       "title": "Drp Cofee",
       "price": "$08.85",
-      "category": "cofee"
+      "category": "drinks"
     },
     {
       "id": 2,
-      "img": "../src/assets/images/Image(2).png",
+      "img": "https://www.sendonlinecake.com/images/choco-chip-cupcakes.jpg",
       "title": "Choco Cup Cake",
       "price": "$4.85",
-      "category": "Quafe Cake"
+      "category": "cake"
     },
     {
       "id": 3,
-      "img": "../src/assets/images/Image(3).png",
+      "img": "https://www.mashed.com/img/gallery/youre-making-your-homemade-fried-chicken-sandwich-all-wrong/l-intro-1614384095.jpg",
       "title": "Chicken Burger",
       "price": "$8.85",
-      "category": "Fast Food"
+      "category": "food"
     },
     {
       "id": 4,
-      "img": "../src/assets/images/Image (4).png",
+      "img": "https://w.forfun.com/fetch/18/18498fb93f44db567422a0bf81a92b26.jpeg",
       "title": "French Fries",
       "price": "$7.85",
-      "category": "Fast Food"
+      "category": "food"
     },
     {
       "id": 5,
-      "img": "../src/assets/images/Image (5).png",
+      "img": "https://media.baamboozle.com/uploads/images/69723/1657880285_225980_url.jpeg",
       "title": "Sandwitch",
       "price": "$3.97",
-      "category": "Fast Food"
+      "category": "food"
     },
     {
       "id": 6,
-      "img": "../src/assets/images/Image (6).png",
+      "img": "https://www.chickni.in/chickni-product/10785-images.jpg",
       "title": "Chinese Soup",
       "price": "$8.85",
-      "category": "Fast Food"
+      "category": "food"
     },
     {
       "id": 7,
-      "img": "../src/assets/images/Image (7).png",
+      "img": "https://brickschicago.com/wp-content/uploads/2023/06/69d369de567c48e29858a01d5124a0ad-1024x768.jpg",
       "title": "Quafe Brade",
       "price": "$7.85",
-      "category": "Snacks"
+      "category": "food"
     },
     {
       "id": 8,
-      "img": "../src/assets/images/Image (8).png",
+      "img": "https://sm.mashable.com/mashable_sea/photo/default/dalgona-coffee-malaysia_hyny.jpg",
       "title": "Dalgona Cofee",
       "price": "$4.97",
-      "category": "cofee"
+      "category": "drinks"
     },
     {
       "id": 9,
-      "img": "../src/assets/images/Image (9).png",
+      "img": "https://nankaseimen.com/wp-content/uploads/2016/10/Nanka-0059.jpg",
       "title": "Chowmin Noodle",
       "price": "$8.85",
-      "category": "Fast Food"
+      "category": "food"
     },
     {
       "id": 10,
-      "img": "../src/assets/images/Image (10).png",
+      "img": "https://wallpapers.com/images/hd/coca-cola-1400-x-930-picture-f4qvuxpqn9pu96xf.jpg",
       "title": "Coka Cola",
       "price": "$7.85",
-      "category": "Cocktails"
+      "category": "drinks"
     },
     {
       "id": 11,
-      "img": "../src/assets/images/Image (11).png",
+      "img": "https://images2.alphacoders.com/728/thumb-1920-728335.jpg",
       "title": "Fruit Salad",
       "price": "$3.97",
-      "category": "Fast Food"
+      "category": "food"
     },
     {
       "id": 12,
-      "img": "../src/assets/images/Image (12).png",
-      "title": "Drp Cofee",
+      "img": "https://gastroguide.borjomi.com/uploads/960_773fc38caa9e832831b9960104a35cbe.jpg",
+      "title": "Barjomi",
       "price": "$08.85",
       "category": "cofee"
     }
@@ -88,7 +88,7 @@
   "news": [
     {
       "id": 1,
-      "img": "../src/assets/images/Image (16).png",
+      "img": "https://media.vanityfair.com/photos/5c6c217d9ecc7129ee2cb2a4/master/w_2560%2Cc_limit/Aaron-Sorkin-The-Newsroom.jpg",
       "title": "A guide to Thai Curry",
       "author": "Andrew Jonson",
       "date": "27th January 2021",
@@ -97,7 +97,7 @@
 
     {
       "id": 2,
-      "img": "../src/assets/images/Image (16).png",
+      "img": "https://i.ytimg.com/vi/fwY3DrFgMvQ/maxresdefault.jpg",
       "title": "A guide to Thai Curry",
       "author": "Andrew Jonson",
       "date": "27th January 2021",
@@ -105,7 +105,7 @@
     },
     {
       "id": 3,
-      "img": "../src/assets/images/Image (16).png",
+      "img": "https://deadline.com/wp-content/uploads/2018/05/rexfeatures_5886114bw.jpg",
       "title": "A guide to Thai Curry",
       "author": "Andrew Jonson",
       "date": "27th January 2021",
@@ -113,7 +113,7 @@
     },
     {
       "id": 4,
-      "img": "../src/assets/images/Image (16).png",
+      "img": "https://images.kinorium.com/movie/shot/1565980/w1500_39766701.jpg",
       "title": "A guide to Thai Curry",
       "author": "Andrew Jonson",
       "date": "27th January 2021",
@@ -121,7 +121,7 @@
     },
     {
       "id": 5,
-      "img": "../src/assets/images/Image (16).png",
+      "img": "https://images.kinorium.com/movie/shot/1565980/w1500_39766675.jpg",
       "title": "A guide to Thai Curry",
       "author": "Andrew Jonson",
       "date": "27th January 2021",
