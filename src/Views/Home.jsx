@@ -15,6 +15,7 @@ import { FaCocktail } from "react-icons/fa";
 import { FaFire } from "react-icons/fa";
 import { FaUtensils } from "react-icons/fa";
 import { useDataContext } from "../Layouts/GlobalContext";
+import MenuComp from "../Components/MenuComp";
 
 function Home() {
   const { products, news } = useDataContext();
@@ -58,7 +59,7 @@ function Home() {
             <AboutUsInfo img1={img1} img2={img2} />
           </section>
           <section className="services">
-            <Link className="section-subtitle" to="menu">
+            <Link className="section-subtitle link" to="menu">
               WHAT WE ARE SERVING
               <FaArrowRight className="section-subtitle__icon" />
             </Link>
@@ -135,7 +136,7 @@ function Home() {
             </div>
           </section>
           <section className="menu">
-            <Link className="section-subtitle" to="menu">
+            <Link className="section-subtitle link" to="menu">
               OUR MENU
               <FaArrowRight className="section-subtitle__icon" />
             </Link>
@@ -149,19 +150,8 @@ function Home() {
               </p>
             </div>
             <div className="section-subtitle-2">Most Popular Picks</div>
-            <div className="menu-container">
-              {products?.slice(0, 6).map((item, index) => {
-                return (
-                  <div className="menu-item" key={index}>
-                    <img src={item.img} alt="menu item" />
-                    <div className="item-info">
-                      <p>{item.title}</p>
-                      <p>{item.price}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+            <MenuComp data={products} amount={6} />
+
             <Button
               title={"View Menu"}
               where={"menu"}

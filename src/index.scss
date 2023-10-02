@@ -68,7 +68,8 @@ button {
   padding-top: 5rem;
 }
 
-.contact-btn {
+.contact-btn,
+.btn {
   font-family: $font-fam;
   padding: 0.7rem 1rem;
   border: none;
@@ -101,7 +102,7 @@ button {
   .section-subtitle__icon {
     border-bottom: 1px solid transparent;
   }
-  &:hover .section-subtitle__icon {
+  &.link:hover .section-subtitle__icon {
     border-bottom: 1px solid $btn-color;
   }
 }
@@ -125,5 +126,33 @@ button {
     padding-top: 6rem;
     text-align: center;
     font-size: 3rem;
+  }
+}
+.menu-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @include mobile-l {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu-item {
+    padding-bottom: 0.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgba(31, 29, 33, 1);
+    img {
+      height: 250px;
+    }
+  }
+  .item-info {
+    padding: 0 0.5rem;
+    @include flex-row;
+
+    @include mobile-l {
+      font-size: 1.2rem;
+      flex-direction: column;
+    }
   }
 }

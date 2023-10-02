@@ -1,21 +1,18 @@
 @import "../styles/variables.scss";
 .home.page {
-  padding: 3rem 2rem 0;
+  padding: $padding-desktop;
 
   @include mobile-l {
-    padding: 0 1rem;
-    padding-top: 4rem;
+    padding: $padding-mobile-l;
   }
 
   @include mobile-s {
-    padding: 0 0.5rem;
-    padding-top: 4rem;
+    padding: $padding-mobile-s;
   }
 }
 
 .hero {
   @include flex-row;
-  padding: 3rem $section-padding 3rem;
 
   @include mobile-l {
     flex-direction: column;
@@ -210,34 +207,6 @@
 .menu {
   margin-top: 2rem;
 
-  .menu-container {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-
-    @include mobile-l {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .menu-item {
-      padding-bottom: 0.5rem;
-      border-radius: 5px;
-      overflow: hidden;
-      background-color: rgba(31, 29, 33, 1);
-      img {
-        height: 250px;
-      }
-    }
-    .item-info {
-      padding: 0 0.5rem;
-      @include flex-row;
-
-      @include mobile-l {
-        font-size: 1.2rem;
-        flex-direction: column;
-      }
-    }
-  }
   .view-menu-btn {
     margin: 0 auto;
     margin-top: 2rem;

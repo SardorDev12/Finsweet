@@ -1,0 +1,53 @@
+@import "../styles/variables.scss";
+
+.ourmenu.page {
+  padding: $padding-desktop;
+
+  @include mobile-l {
+    padding: $padding-mobile-l;
+  }
+
+  @include mobile-s {
+    padding: $padding-mobile-s;
+  }
+
+  .section-heading {
+    .section-subtitle {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .section-heading__title {
+      @include flex-row;
+      margin: 1rem 0 4rem;
+
+      @include mobile-l {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem 0;
+      }
+      h2 {
+        font-size: $title-size-sm;
+      }
+      p {
+        width: 50%;
+        color: $text-color-sm;
+        @include mobile-l {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .menu-categories {
+    @include flex-row;
+    justify-content: center;
+    gap: 1rem;
+    button {
+      text-transform: capitalize;
+      @include mobile-s {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
