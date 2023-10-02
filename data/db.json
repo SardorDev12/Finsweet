@@ -2,21 +2,21 @@
   "products": [
     {
       "id": 1,
-      "img": "../src/assets/images/Image (1).png",
+      "img": "../src/assets/images/Image(1).png",
       "title": "Drp Cofee",
       "price": "$08.85",
       "category": "cofee"
     },
     {
       "id": 2,
-      "img": "../src/assets/images/Image (2).png",
+      "img": "../src/assets/images/Image(2).png",
       "title": "Choco Cup Cake",
       "price": "$4.85",
       "category": "Quafe Cake"
     },
     {
       "id": 3,
-      "img": "../src/assets/images/Image (3).png",
+      "img": "../src/assets/images/Image(3).png",
       "title": "Chicken Burger",
       "price": "$8.85",
       "category": "Fast Food"
