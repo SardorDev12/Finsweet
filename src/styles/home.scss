@@ -122,6 +122,11 @@
       @include tablet {
         gap: 0;
       }
+      @include mobile-l {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 2rem;
+      }
       .stat-heading {
         margin-bottom: 1rem;
         h3 {
