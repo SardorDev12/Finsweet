@@ -18,6 +18,7 @@ import { useDataContext } from "../Layouts/GlobalContext";
 
 function Home() {
   const { products, news } = useDataContext();
+  console.log(products, news);
   return (
     <>
       <section className="home page">
