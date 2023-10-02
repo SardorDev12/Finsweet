@@ -183,7 +183,7 @@ function Home() {
                       <p className="blog-date">{blog.date}</p>
                       <h4>{blog.title}</h4>
                       <p className="blog-text">
-                        {blog.text.substring(0, 200)}
+                        {blog.text.substring(0, 100)}
                         <Link to={"blog"} className="readmore">
                           Read More
                         </Link>
