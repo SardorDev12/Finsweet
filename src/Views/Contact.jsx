@@ -34,7 +34,6 @@ function Contact() {
             </div>
           </div>
           <textarea name="message" id="message"></textarea>
-
           <button type="submit" className="submit-btn btn">
             Send message
           </button>

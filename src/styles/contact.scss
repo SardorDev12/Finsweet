@@ -2,14 +2,23 @@
 
 .contact.page {
   padding: $padding-desktop;
-  padding-top: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
   @include flex-row;
   align-items: flex-start;
+
+  @include tablet {
+    padding: 0 2rem;
+    padding-top: 10rem;
+  }
+
   @include mobile-l {
     padding: 0 1rem;
     padding-top: 5rem;
   }
   .contact-form {
+    @include flex-col;
+    align-items: flex-start;
     .contact-form__title {
       padding-top: 2rem;
       font-size: $title-size-sm;
@@ -75,8 +84,15 @@
       width: 200px;
       height: 400px;
 
+      @include tablet {
+        width: 250px;
+      }
+
       &:first-child {
         transform: translateY(2rem);
+        @include tablet {
+          display: none;
+        }
       }
     }
   }

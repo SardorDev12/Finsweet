@@ -1,11 +1,19 @@
+// Styles
 import "../styles/home.scss";
+
+// Components
 import Button from "../Components/Button";
-import HeaderImage from "../assets/images/Header Image.png";
 import AboutUsInfo from "../Components/AboutUsInfo";
 import Testimonials from "../Components/Testimonials";
+import MenuComp from "../Components/MenuComp";
+import { useDataContext } from "../Layouts/GlobalContext";
+
+// Assets
+import HeaderImage from "../assets/images/Header Image.png";
 import img1 from "../assets/images/Know more Image 1.png";
 import img2 from "../assets/images/Know more Image 2.png";
 
+// Packages
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { FaBirthdayCake } from "react-icons/fa";
@@ -14,8 +22,6 @@ import { FaHamburger } from "react-icons/fa";
 import { FaCocktail } from "react-icons/fa";
 import { FaFire } from "react-icons/fa";
 import { FaUtensils } from "react-icons/fa";
-import { useDataContext } from "../Layouts/GlobalContext";
-import MenuComp from "../Components/MenuComp";
 
 function Home() {
   const { products, news } = useDataContext();
