@@ -39,7 +39,7 @@ function Header({ hideBtn, location }) {
             <NavLink onClick={closeMenu} to="/ourStory">
               Our Story
             </NavLink>
-            <NavLink onClick={closeMenu} to="/blog">
+            <NavLink onClick={closeMenu} to="/blogs">
               Blog
             </NavLink>
             <NavLink onClick={closeMenu} to="/contact">

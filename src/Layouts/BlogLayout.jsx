@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
+import "../styles/blogLayout.scss";
 
 function BlogLayout() {
   return (
-    <div className="blog page">
-      <h2>Our Blog</h2>
+    <div className="blog-layout">
       <Outlet />
     </div>
   );
