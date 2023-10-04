@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { memo } from "react";
 
 function Button({ title, clas, hideBtn, where }) {
   return (
