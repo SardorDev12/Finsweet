@@ -3,6 +3,7 @@ import "../styles/home.scss";
 import { Link } from "react-router-dom";
 import { FaChartBar } from "react-icons/fa";
 import Button from "../Components/Button";
+import { memo } from "react";
 
 function AboutUsInfo({ img1, img2 }) {
   return (
@@ -78,4 +79,6 @@ function AboutUsInfo({ img1, img2 }) {
     </section>
   );
 }
-export default AboutUsInfo;
+
+
+export default memo(AboutUsInfo);

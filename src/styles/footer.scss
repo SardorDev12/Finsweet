@@ -81,6 +81,11 @@
         a:hover {
           color: $btn-color;
         }
+        svg {
+          @include mobile-l {
+            font-size: 2rem;
+          }
+        }
       }
     }
   }

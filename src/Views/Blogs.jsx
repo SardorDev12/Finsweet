@@ -1,7 +1,12 @@
 import { Link, useLoaderData } from "react-router-dom";
 import "../styles/blogLayout.scss";
+import { useEffect } from "react";
 
 function Blogs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { news } = useLoaderData();
   const trendingArticle = news[0];
   return (

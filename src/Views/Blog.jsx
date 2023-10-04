@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 
 function Blog() {
-  //   const { id } = useParams();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const singleBlog = useLoaderData();
   return (
     <div className="single-article">

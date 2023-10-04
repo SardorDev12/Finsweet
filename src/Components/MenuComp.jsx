@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../Components/Button";
+import { memo } from "react";
 
 function MenuComp({ data, amount }) {
   return (
@@ -19,4 +20,5 @@ function MenuComp({ data, amount }) {
     </div>
   );
 }
-export default MenuComp;
+
+export default memo(MenuComp);

@@ -22,8 +22,13 @@ import { FaHamburger } from "react-icons/fa";
 import { FaCocktail } from "react-icons/fa";
 import { FaFire } from "react-icons/fa";
 import { FaUtensils } from "react-icons/fa";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { products, news } = useDataContext();
   return (
     <>
@@ -180,7 +185,7 @@ function Home() {
                       <h4>{blog.title}</h4>
                       <p className="blog-text">
                         {blog.text.substring(0, 100)}
-                        <Link to={"blog"} className="readmore">
+                        <Link to={`/blogs/${blog.id}`} className="readmore">
                           Read More
                         </Link>
                       </p>

@@ -1,8 +1,13 @@
 import "../styles/contact.scss";
 import img1 from "../assets/images/Blog Image.png";
 import img2 from "../assets/images/Blog Image.png";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="contact page">
       <div className="contact-form">

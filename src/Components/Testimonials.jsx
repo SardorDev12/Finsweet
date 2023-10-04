@@ -1,7 +1,7 @@
 import img3 from "../assets/images/person.png";
 import video from "../assets/videos/BOMBA_COFFEE_Promotional_Video____Epic_B_roll_sequence___All_Handheld.mp4";
 import { FaQuoteLeft } from "react-icons/fa";
-import { useRef, useState } from "react";
+import { memo, useRef, useState } from "react";
 import testimonials from "../data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -67,4 +67,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default memo(Testimonials);

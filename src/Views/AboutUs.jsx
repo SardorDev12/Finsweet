@@ -4,8 +4,12 @@ import img1 from "../assets/images/Know more Image 1 (1).png";
 import img2 from "../assets/images/Know more Image 2 (1).png";
 import wallpaper from "../assets/images/BG.jpg";
 import overlay from "../assets/images/BG Overlay.png";
+import { useEffect } from "react";
 
 function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about page">
       <AboutUsInfo img1={img1} img2={img2} />

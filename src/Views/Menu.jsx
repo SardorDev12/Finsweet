@@ -2,9 +2,13 @@ import { FaArrowRight } from "react-icons/fa";
 import MenuComp from "../Components/MenuComp";
 import { useDataContext } from "../Layouts/GlobalContext";
 import "../styles/menu.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Menu() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Data
   const data = useDataContext();
   const [products, setProducts] = useState(data.products);

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import "../styles/footer.scss";
 import Header from "./Header";
 import {
@@ -78,7 +78,11 @@ function Footer() {
               </ul>
             </div>
             <div className="footer-column">
-              <Button title={"Contact Us"} clas={"contact-btn"} />
+              <Button
+                title={"Contact Us"}
+                where="contact"
+                clas={"contact-btn"}
+              />
             </div>
           </div>
         </div>
@@ -86,4 +90,5 @@ function Footer() {
     </footer>
   );
 }
-export default Footer;
+
+export default memo(Footer);

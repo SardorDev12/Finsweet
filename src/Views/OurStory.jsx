@@ -1,8 +1,13 @@
 import "../styles/ourStory.scss";
 import img1 from "../assets/images/Blog Image.png";
 import img2 from "../assets/images/Blog Image.png";
+import { useEffect } from "react";
 
 function OurStory() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="ourstory page">
       <div className="story-image">

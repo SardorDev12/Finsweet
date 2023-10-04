@@ -11,4 +11,4 @@ function Button({ title, clas, hideBtn, where }) {
     </button>
   );
 }
-export default Button;
+export default memo(Button);

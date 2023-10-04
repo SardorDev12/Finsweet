@@ -3,7 +3,7 @@ import logo from "../assets/icons/Logo.svg";
 import "../styles/header.scss";
 import Button from "./Button";
 import { FaBars } from "react-icons/fa";
-import { useState } from "react";
+import { memo, useState } from "react";
 
 function Header({ hideBtn, location }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -48,9 +48,15 @@ function Header({ hideBtn, location }) {
           </ul>
         </nav>
 
-        <Button title={"Contact Us"} clas={"contact-btn"} hideBtn={hideBtn} />
+        <Button
+          title={"Contact Us"}
+          clas={"contact-btn"}
+          where="contact"
+          hideBtn={hideBtn}
+        />
       </div>
     </header>
   );
 }
-export default Header;
+
+export default memo(Header);
